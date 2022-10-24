@@ -40,12 +40,13 @@ header{
     text-align: center;
 }
 .menu li a :hover{
-    background-color: lightseagreen;
+    background-color: grey;
 }
 /*Fin Menu de navegacion*/
 
 /*Seccion de Peinados*/
 .grid-layout{
+    background-color: rosybrown;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
@@ -53,10 +54,10 @@ header{
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .grid-layout :hover{
-    background-color: antiquewhite;
+    background-color: burlywood;
 }
 .C1{
     grid-column: 1/5;

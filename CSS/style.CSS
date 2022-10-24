@@ -35,18 +35,20 @@ body{
 .menu{
     list-style: none;
 }
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-}
-.menu li{
+.header .menu li {
     display: inline-block;
-    text-align: center;
+    padding: 0 20px;
 }
-.menu li a :hover{
-    background-color: grey;
+.header .menu li:hover{
+    transform: scale(1.1);
+}
+.header .menu a{
+    font-size: 700;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header.menu li a:hover{
+    color: blueviolet;
 }
 /*Fin Menu de navegacion*/
 

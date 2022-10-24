@@ -4,22 +4,17 @@ body{
     margin: 0;
     text-align: center;
 }
-header{
-    display: flex;
-    height: 70px;
-    border-color: rosybrown;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+/*Header*/
+
+/*Fin Header*/
+
+/*Logo*/
 .logo{
-    display: flex;
-    align-items: center;
+    cursor: pointer;
+    margin-right: auto;
 }
-.logo-img{
-    height: 50px;
-    margin-right: 10 px;
-}
+/*Fin Logo*/
+
 /* Menu de navegacion */
 .menu{
     list-style: none;

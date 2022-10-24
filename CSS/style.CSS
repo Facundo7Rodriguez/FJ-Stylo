@@ -5,7 +5,15 @@ body{
     text-align: center;
 }
 /*Header*/
-
+.header{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    border-radius: 50px;
+}
 /*Fin Header*/
 
 /*Logo*/
@@ -26,11 +34,6 @@ body{
 /* Menu de navegacion */
 .menu{
     list-style: none;
-    padding: 0;
-    background-color: rosybrown;
-    width: 90%;
-    max-width: auto;
-    margin: auto;
 }
 .menu li a{
     text-decoration: none;

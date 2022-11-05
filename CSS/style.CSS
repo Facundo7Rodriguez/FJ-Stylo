@@ -1,10 +1,11 @@
-body{
+body {
     font-family: Arial;
     background-color: lightsalmon;
     margin: 0;
     text-align: center;
 }
-header{
+
+header {
     display: flex;
     height: 70px;
     border-color: rosybrown;
@@ -12,16 +13,21 @@ header{
     align-items: center;
     padding: 10px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.logo-img{
+
+.logo-img {
     height: 50px;
     margin-right: 10 px;
 }
+
+
 /* Menu de navegacion */
-.menu{
+
+.menu {
     list-style: none;
     padding: 0;
     background-color: rosybrown;
@@ -29,23 +35,30 @@ header{
     max-width: auto;
     margin: auto;
 }
-.menu li a{
+
+.menu li a {
     text-decoration: none;
     color: white;
     padding: 20px;
     display: block;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     text-align: center;
 }
-.menu li a :hover{
+
+.menu li a :hover {
     background-color: lightseagreen;
 }
+
+
 /*Fin Menu de navegacion*/
 
+
 /*Seccion de Peinados*/
-.grid-layout{
+
+.grid-layout {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
@@ -55,10 +68,37 @@ header{
     padding: 20px;
     border: 1px solid black;
 }
-.grid-layout :hover{
+
+.grid-layout :hover {
     background-color: antiquewhite;
 }
-.C1{
+
+.C1 {
     grid-column: 1/5;
 }
+
+
 /*Fin Seccion de Peinados*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: stretch;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.detalles {
+    display: grid;
+    text-align: start;
+}
+
+.detalles-p {
+    display: grid;
+    text-align: start;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}

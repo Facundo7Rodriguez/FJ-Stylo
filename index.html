@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/script.js"></script>
     <title>FJ Stylo</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -23,35 +26,52 @@
                 <li><a href="brushing.html">Brushing</a></li>
                 <li><a href="colorimetria.html">Colorimetria</a></li>
                 <li><a href="maquillaje.html">Maquillaje</a></li>
-                <li><a href="queratina.html">Queratina</a></li>      
-                <li><a href="nosotros.html">Nosotros</a></li>          
+                <li><a href="queratina.html">Queratina</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
         </div>
     </nav>
     <section class="grid-layout">
         <div class="C1">
             <h1>Peinados</h1>
-        </div>        
-        <div>
-                <a href="queratina.html"><img src="Imagenes/corte1.jpg" alt="tipo" width="224" height="224"></a>
-                <a href="queratina.html"><img src="Imagenes/corte1-1.jpg" alt="tipo" width="224" height="224"></a>
-                <h2>Queratina</h2>
         </div>
         <div>
-                <a href="alisado.html"><img src="Imagenes/corte2.jpg" alt="tipo" width="224" height="224"></a>
-                <a href="alisado.html"><img src="Imagenes/corte2-2.jpg" alt="tipo" width="224" height="224"></a>
-                <h2>Alisado</h2>
+            <a href="queratina.html"><img src="Imagenes/corte1.jpg" alt="tipo" width="224" height="224"></a>
+            <a href="queratina.html"><img src="Imagenes/corte1-1.jpg" alt="tipo" width="224" height="224"></a>
+            <h2>Queratina</h2>
         </div>
         <div>
-                <a href="brushing.html"><img src="Imagenes/corte3.jpg" alt="tipo" width="224" height="224"></a>
-                <a href="brushing.html"><img src="Imagenes/corte3-3.jpg" alt="tipo" width="224" height="224"></a>
-                <h2>Brushing</h2>
+            <a href="alisado.html"><img src="Imagenes/corte2.jpg" alt="tipo" width="224" height="224"></a>
+            <a href="alisado.html"><img src="Imagenes/corte2-2.jpg" alt="tipo" width="224" height="224"></a>
+            <h2>Alisado</h2>
         </div>
         <div>
-                <a href="colorimetria.html"><img src="Imagenes/corte10.png" alt="tipo" width="224" height="224"></a>
-                <a href="colorimetria.html"><img src="Imagenes/corte10-1.png" alt="tipo" width="224" height="224"></a>
-                <h2>Colorimetria</h2>
+            <a href="brushing.html"><img src="Imagenes/corte3.jpg" alt="tipo" width="224" height="224"></a>
+            <a href="brushing.html"><img src="Imagenes/corte3-3.jpg" alt="tipo" width="224" height="224"></a>
+            <h2>Brushing</h2>
+        </div>
+        <div>
+            <a href="colorimetria.html"><img src="Imagenes/corte10.png" alt="tipo" width="224" height="224"></a>
+            <a href="colorimetria.html"><img src="Imagenes/corte10-1.png" alt="tipo" width="224" height="224"></a>
+            <h2>Colorimetria</h2>
         </div>
     </section>
+    <fieldset class="formulario">
+        <div id="capa"></div>
+        <form action="JS/script.js">
+            <fieldset>
+                <label for="texto">Texto:</label>
+                <input id="texto" type="text" size="40/"></br>
+            </fieldset>
+        </form>
+        <form action="JS/script.js">
+            <fieldset>
+                <label for="texto">Texto:</label>
+                <input id="texto" type="text" size="40/"></br>
+            </fieldset>
+            <input type="button" onclick="addElemento(getElementById('texto').value);" value="Añadir texto">
+        </form>
+    </fieldset>
 </body>
+
 </html>

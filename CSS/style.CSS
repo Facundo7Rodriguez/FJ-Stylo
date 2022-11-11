@@ -96,5 +96,31 @@ body{
 /*Fin Footer*/
 
 /*Estilos Nosotros*/
-
+.btn{
+    display: inline-block;
+    height: 30px;
+    padding: 5px 10%;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.btn-blue{
+    color: white;
+    background-color:rgba(227, 89, 255, 0.514);
+}
+.btn-blue:hover{
+    background-color:rgba(227, 89, 255, 0.514);
+}
+.btn-blue:active{
+    background-color:rgba(252, 95, 231, 0.514);
+}
+.btns{
+    display: inline-block;
+    height: 10px;
+    padding: 5px 10%;
+    text-decoration: none;
+}
+.btns-blue{
+    color: white;
+    background-color: rosybrown;
+}
 /*Fin Estilos nosotos*/

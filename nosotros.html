@@ -29,17 +29,30 @@
     <section>
         <div>
             <form action="post">
-                <fieldset><legend></legend>
-                    <label for="nt">Numero de Tarjeta (16)</label> </br>
-                    <input type="text" class="btns-blue" name="nt" id="nt" maxlength="16">
-                    <br>
-                    <br />
+                <fieldset><legend>Solicitar Turno</legend>
+                    <label for="nt">DNI</label>
+                    <input type="text" name="nt" id="nt" maxlength="8">
+                    <br/>
+                    <br/>
                     <label for="nom"> Nombre </label>
-                    <input type="text" class="btns-blue" name="Nombre" id="nom"/>
+                    <input type="text" name="Nombre" id="nom"/>
+                    <br/>
+                    <br/>
                     <label for="ap"> Apellido </label>
-                    <input type="text" class="btns-blue" name="Apellido" id="ap"/>
+                    <input type="text" name="Apellido" id="ap"/>
+                    <br/>
+                    <br/>
+                    <label for="dia"> Dia </label>
+                    <input type="text" name="dia" id="dia"/>
+                    <br/>
+                    <br/>
+                    <label for="hr"> Hora </label>
+                    <input type="text" name="hora" id="hr"/>
+                    <br/>
+                    <br/>
+                    <input type="submit" class="btn btn-blue" name="guardar" value="Ingresar" />
                 </fieldset>
-                <input type="submit" class="btn btn-blue" name="guardar" value="Ingresar" />
+                
             </form>
         </div>
     </section>

@@ -68,6 +68,9 @@ body{
 }
 .peinados{
     grid-column: 1/5;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
 }
 .grid-layout .peinados img{
     height: 224px;

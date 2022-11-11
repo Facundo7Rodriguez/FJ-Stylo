@@ -54,6 +54,7 @@ body{
 
 /*Seccion de Peinados*/
 .grid-layout{
+    cursor: pointer;
     background-color: rosybrown;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -63,15 +64,17 @@ body{
     margin: 0 auto;
     padding: 20px;
     border: 1px solid black;
+    
 }
-.grid-layout :hover{
-    background-color: burlywood;
-}
-.C1{
+.peinados{
     grid-column: 1/5;
 }
+.grid-layout .peinados img{
+    height: 224px;
+    width: 224px;
+    transition: all 0.3s;
+}
+.grid-layout .peinados img:hover{
+    transform: scale(1.1);
+}
 /*Fin Seccion de Peinados*/
-
-/*Seccion Peinados*/
-
-/*Fin Seccion Peinados*/

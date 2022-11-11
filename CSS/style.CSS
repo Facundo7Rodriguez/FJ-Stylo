@@ -64,7 +64,8 @@ body{
     margin: 0 auto;
     padding: 20px;
     border: 1px solid black;
-    
+    border-radius: 50px;
+    margin-top: 50px;
 }
 .peinados{
     grid-column: 1/5;
@@ -78,3 +79,11 @@ body{
     transform: scale(1.1);
 }
 /*Fin Seccion de Peinados*/
+
+/*Inicio Footer*/
+
+/*Fin Footer*/
+
+/*Estilos Nosotros*/
+
+/*Fin Estilos nosotos*/

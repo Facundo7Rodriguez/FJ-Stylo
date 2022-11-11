@@ -52,35 +52,44 @@ body{
 }
 /*Fin Menu de navegacion*/
 
-/*Seccion de Peinados*/
-.grid-layout{
-    cursor: pointer;
-    background-color: rosybrown;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    justify-content: stretch;
-    width: auto;
-    margin: 200px auto;
-    padding: 20px;
-    border: 1px solid black;
-    margin-top: 50px;
+/*Slider*/
+.slider{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
 }
-.peinados{
-    grid-column: 1/5;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aquamarine;
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
 }
-.grid-layout .peinados img{
-    height: 224px;
-    width: 224px;
-    transition: all 0.3s;
+.slider li{
+    width: 100%;
+    list-style: none;
 }
-.grid-layout .peinados img:hover{
-    transform: scale(1.1);
+.slider img{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-/*Fin Seccion de Peinados*/
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+/*Fin slider*/
 
 /*Inicio Footer*/
 

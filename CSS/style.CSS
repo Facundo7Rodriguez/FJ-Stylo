@@ -11,6 +11,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     height: 85px;
+    margin-top: 10px;
     padding: 5px 10%;
     border-radius: 50px;
 }

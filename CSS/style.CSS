@@ -91,9 +91,69 @@ body{
 }
 /*Fin slider*/
 
-/*Inicio Footer*/
+/*INICIO FOOTER*/
+.footer{
+    width: 100%;
+    background-color: rosybrown;
+    color: white;
+    max-width: auto;
+    display: flex;
+    margin: auto;
+}
 
-/*Fin Footer*/
+/*Informacion Nosotros*/
+.columna1{
+    max-width: 400px;
+}
+.columna1 h1{
+    font-size: 30px;
+}
+.columna1 p{
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+    margin-top: 20px;
+}
+
+/*Fin Informacion Nosotros*/
+
+/*Redes Sociales*/
+.columna2{
+    max-width: auto;
+    margin-left: 20px;
+}
+.columna2 h1{
+    font-size: 30px;
+}
+.fila1{
+    margin-top: 10px;
+    display: flex;
+}
+.fila1 img{
+    width: 30px;
+    height: 30px;
+}
+.fila1 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(61, 61, 61);
+}
+/*Fin Redes Sociales*/
+
+/*Contactenos*/
+.columna3{
+    max-width: auto;
+
+}
+.fila2{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.fila2 label{
+    color: rgb(61, 61, 61);
+}
+/*Fin Contactenos*/
+/*FIN FOOTER*/
 
 /*Estilos Nosotros*/
 .btn{

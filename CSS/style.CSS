@@ -195,6 +195,7 @@ footer{
     position: absolute;
     margin-top: -85px;
     z-index: -20;
+    transition: all 0.3s;
 }
 .formulario .submit{
     background: rgba(0,0,0,0.7 );

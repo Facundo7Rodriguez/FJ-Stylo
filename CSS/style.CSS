@@ -102,16 +102,19 @@ body{
     padding: 5px 10%;
     border-radius: 50px;
     text-decoration: none;
+    transition: all .3s;
 }
 .btn-blue{
     color: white;
-    background-color:rgba(227, 89, 255, 0.514);
+    background-color:rgba(104, 10, 122, 0.514);
+    
 }
 .btn-blue:hover{
-    background-color:rgba(227, 89, 255, 0.514);
+    background-color:rgba(252, 95, 231, 0.514);
+    transform: rotate(360deg) scale(1.4);
 }
 .btn-blue:active{
-    background-color:rgba(252, 95, 231, 0.514);
+    background-color:rgba(227, 89, 255, 0.514);
 }
 .btns{
     display: inline-block;

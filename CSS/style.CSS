@@ -93,6 +93,23 @@ body{
 }
 /*Fin slider*/
 
+.btn{
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: rosybrown;
+    border-radius: 50px;
+    padding: 25px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 495px;
+    margin-right: 495px;
+}
+.btn:hover{
+    background-color: rgb(133, 101, 101);
+}
+
 /*INICIO FOOTER*/
 footer{
     background-color: rosybrown;

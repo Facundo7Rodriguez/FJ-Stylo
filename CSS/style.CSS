@@ -76,7 +76,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
+/*Movimiento Img*/
 @keyframes cambio{
     0% {margin-left: 0;}
     20%{margin-left: 0;}
@@ -106,6 +106,7 @@ footer{
     justify-content: space-between;
     padding: 10px;
 }
+/*Informacion de Nosotros*/
 .columna1{
     max-width: 400px;
 }
@@ -117,6 +118,9 @@ footer{
     text-align: left;
     margin-left: 20px;
 }
+/*Fin Informacion de Nosotros*/
+
+/*Redes Sociales*/
 .columna2{
     max-width: auto;
 }
@@ -134,7 +138,9 @@ footer{
     margin-left: 10px;
     color: rgba(61, 61, 61);
 }
+/*Fin Redes Sociales*/
 
+/*Contactenos*/
 .columna3{
     max-width: auto;
 }
@@ -154,7 +160,7 @@ footer{
     max-width: 150px;
     color: rgba(61, 61, 61);
 }
-
+/*Fin contactenos*/
 /*FIN FOOTER*/
 
 
@@ -204,6 +210,9 @@ footer{
     cursor: pointer;
     border: none;
 }
+/*Formulario-JS*/
 .fijar{
     margin-top: -130px;
 }
+/*Fin Formulario-JS*/
+/*Fin Formulario*/

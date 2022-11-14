@@ -125,7 +125,7 @@
     .container__card {
         max-width: 1200px;
         margin: 75px;
-        margin-top: 0%;
+        margin-top: 1%;
         perspective: 1000px;
         display: flex;
         justify-content: center;

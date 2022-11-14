@@ -5,73 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/script.js"></script>
-    <title>FJ Stylo</title>
+    <title>FJ-Stylo</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="Imagenes/Logo.jpg" alt="logo" class="logo-img">
-            <h2>FJ Stylo</h2>
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+            <h2 class="nav__logo">
+                <a href="#">FJ-Style</a>
+            </h2>
+
+            <ul class="nav__links">
+
+                <li class="nav__item">
+                    <a href="servicios.html" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="maquillaje.html" class="nav__link">Maquillaje</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nosotros.html" class="nav__link">Acerca de</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html" class="nav__link">Contacto</a>
+                </li>
+
+            </ul>
+
+            <a href="#nav" class="nav__hamburguer">
+                <img src="./Imagenes/logomenublanco.png" class="nav__icon">
+            </a>
+            <a href="#" class="nav__close">
+                <img src="./Imagenes/logoxblanco.png" class="nav__icon">
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="container__card">
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./Imagenes/img1.jpg);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h1>Peluqueria</h1>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>Peluqueria</h1>
+                            <p>Colorimetria, cortes, alisados, brashin, y otras cosas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./Imagenes/img2.jpg);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h1>Maquillaje</h1>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>Maquillaje</h1>
+                            <p>Maquillaje profecional para eventos, bodas, xv, etc</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./Imagenes/img3.jpg);">
+                        <div class="bg"></div>
+
+                        <div class="body__card_front">
+                            <h1>Nails</h1>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>Nails</h1>
+                            <p>Uñas para eventos, bodas, xv o para todos los dias! </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </header>
-    <nav>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="alisado.html">Alisado</a></li>
-                <li><a href="brushing.html">Brushing</a></li>
-                <li><a href="colorimetria.html">Colorimetria</a></li>
-                <li><a href="maquillaje.html">Maquillaje</a></li>
-                <li><a href="queratina.html">Queratina</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+
+    </main>
+
+
+    <a class="btn" href="nosotros.html">Solicitar un turno</a>
+
+    <footer>
+
+        <div class="container__footer">
+
+            <div class="box__footer">
+                <h2>Salon de belleza</h2>
+                <p>Peluqueira</br> colorimetria</br> manicure profesional</br> maquillaje profesional</p>
+            </div>
+
+            <div class="box__footer">
+                <h2>Contacto</h2>
+
+                <a href="https://www.instagram.com/fjstylo.cm/"><img src="./Imagenes/logo-insta.png">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100063582728412"><img src="./Imagenes/logo-face.png">Facebook</a>
+            </div>
+
         </div>
-    </nav>
-    <section class="grid-layout">
-        <div class="C1">
-            <h1>Peinados</h1>
+
+        <div class="derechos">
+            <hr>
+            <p>Todos los derechos reservados :p</p>
         </div>
-        <div>
-            <a href="queratina.html"><img src="Imagenes/corte1.jpg" alt="tipo" width="224" height="224"></a>
-            <a href="queratina.html"><img src="Imagenes/corte1-1.jpg" alt="tipo" width="224" height="224"></a>
-            <h2>Queratina</h2>
-        </div>
-        <div>
-            <a href="alisado.html"><img src="Imagenes/corte2.jpg" alt="tipo" width="224" height="224"></a>
-            <a href="alisado.html"><img src="Imagenes/corte2-2.jpg" alt="tipo" width="224" height="224"></a>
-            <h2>Alisado</h2>
-        </div>
-        <div>
-            <a href="brushing.html"><img src="Imagenes/corte3.jpg" alt="tipo" width="224" height="224"></a>
-            <a href="brushing.html"><img src="Imagenes/corte3-3.jpg" alt="tipo" width="224" height="224"></a>
-            <h2>Brushing</h2>
-        </div>
-        <div>
-            <a href="colorimetria.html"><img src="Imagenes/corte10.png" alt="tipo" width="224" height="224"></a>
-            <a href="colorimetria.html"><img src="Imagenes/corte10-1.png" alt="tipo" width="224" height="224"></a>
-            <h2>Colorimetria</h2>
-        </div>
-    </section>
-    <fieldset class="formulario">
-        <div id="capa"></div>
-        <form action="JS/script.js">
-            <fieldset>
-                <label for="texto">Texto:</label>
-                <input id="texto" type="text" size="40/"></br>
-            </fieldset>
-        </form>
-        <form action="JS/script.js">
-            <fieldset>
-                <label for="texto">Texto:</label>
-                <input id="texto" type="text" size="40/"></br>
-            </fieldset>
-            <input type="button" onclick="addElemento(getElementById('texto').value);" value="Añadir texto">
-        </form>
-    </fieldset>
+    </footer>
+
+
 </body>
 
 </html>

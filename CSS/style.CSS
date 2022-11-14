@@ -16,7 +16,7 @@
     }
     
     .header {
-        background-image: linear-gradient(rgba(255, 86, 210, 0.631), rgba(255, 255, 255, 0.2));
+        background-image: linear-gradient(rgba(207, 75, 106), rgba(255, 255, 255, 0.2));
         background-size: cover;
         height: 35vh;
         color: rgb(255, 255, 255);
@@ -71,7 +71,7 @@
     }
     
     .nav__links {
-        background-color: rgb(255, 86, 210);
+        background-color: rgb(207, 75, 106);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -190,7 +190,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(207, 75, 106, 0.255);
         border-radius: 20px;
     }
     
@@ -206,7 +206,7 @@
     }
     
     .body__card_back input:hover {
-        box-shadow: 1px 1px 30px 0px #449de6;
+        box-shadow: 1px 1px 30px 0px #b7b7b7;
     }
     /*Fin de las tarjetas */
     /*Boton*/
@@ -228,14 +228,14 @@
     }
     
     .btn:hover {
-        background-color: rgb(255, 86, 210);
+        background-color: rgb(207, 75, 106);
     }
     /*INICIO FOOTER*/
     
     footer {
         width: 100%;
         padding: 50px 0px;
-        background-color: rgb(255, 86, 210);
+        background-color: rgb(207, 75, 106);
         font-family: 'poppins';
         background-size: cover;
     }

@@ -1,317 +1,279 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-}
-
-.container {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
-}
-
-.header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./assets/hero.jpg');
-    background-size: cover;
-    min-height: 500px;
-    height: 100vh;
-    color: #fff;
-}
-
-.nav {
-    --state-close: scale(0);
-    --state-hamburguer: scale(1);
-    --state-menu: translate(-100%);
-    padding: 40px 0;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: repeat(2, max-content);
-}
-
-.nav:target {
-    --state-menu: translate(0);
-    --state-close: scale(1);
-    --state-hamburguer: scale(0);
-}
-
-.nav__logo {
-    font-size: 2.5rem;
-    z-index: 1;
-}
-
-.nav__logo a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Poppins';
-}
-
-.nav__hamburguer,
-.nav__close {
-    cursor: pointer;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-    transition: .4s transform;
-}
-
-.nav__hamburguer {
-    transform: var(--state-hamburguer);
-}
-
-.nav__close {
-    transform: var(--state-close);
-}
-
-.nav__icon {
-    width: 40px;
-}
-
-.nav__links {
-    background-color: rgb(255, 86, 210);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-    display: grid;
-    align-content: center;
-    gap: 2em;
-    padding-left: 5%;
-    transform: var(--state-menu);
-    transition: .3s transform;
-}
-
-.nav__item {
-    list-style: none;
-}
-
-.nav__link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
-
-@media (min-width:768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+    }
+    
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden;
+    }
+    
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./assets/hero.jpg');
+        background-size: cover;
+        min-height: 500px;
+        height: 100vh;
+        color: #fff;
+    }
+    
     .nav {
-        --state-hamburguer: scale(0);
-        --state-menu: translate(0);
-    }
-    .nav:target {
         --state-close: scale(0);
+        --state-hamburguer: scale(1);
+        --state-menu: translate(-100%);
+        padding: 40px 0;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(2, max-content);
     }
-    .nav__links {
-        padding: 0;
-        background-color: unset;
-        position: unset;
-        gap: 1.5em;
-        grid-auto-flow: column;
-        transform: unset;
+    
+    .nav:target {
+        --state-menu: translate(0);
+        --state-close: scale(1);
+        --state-hamburguer: scale(0);
+    }
+    
+    .nav__logo {
+        font-size: 2.5rem;
+        z-index: 1;
+    }
+    
+    .nav__logo a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins';
+    }
+    
+    .nav__hamburguer,
+    .nav__close {
+        cursor: pointer;
         grid-column: -2/-1;
         grid-row: 1/2;
+        transition: .4s transform;
     }
+    
+    .nav__hamburguer {
+        transform: var(--state-hamburguer);
+    }
+    
+    .nav__close {
+        transform: var(--state-close);
+    }
+    
+    .nav__icon {
+        width: 40px;
+    }
+    
+    .nav__links {
+        background-color: rgb(255, 86, 210);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        display: grid;
+        align-content: center;
+        gap: 2em;
+        padding-left: 5%;
+        transform: var(--state-menu);
+        transition: .3s transform;
+    }
+    
+    .nav__item {
+        list-style: none;
+    }
+    
     .nav__link {
-        font-size: 1rem;
-        letter-spacing: none;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
     }
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
-    padding: 25px 45px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 495px;
-    margin-right: 495px;
-    font-family: 'Poppins';
-}
-
-.btn:hover {
-    background-color: rgb(255, 86, 210);
-}
-
-
-/*INICIO FOOTER*/
-
-footer {
-    background-color: rgb(255, 86, 210);
-    color: white;
-    width: 100%;
-    margin: auto;
-}
-
-.footer-body {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-
-/*Informacion de Nosotros*/
-
-.columna1 {
-    max-width: 400px;
-}
-
-.columna1 h1 {
-    font-size: 25px;
-}
-
-.columna1 p {
-    font-size: 20px;
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    margin-left: 20px;
-}
-
-
-/*Fin Informacion de Nosotros*/
-
-
-/*Redes Sociales*/
-
-.columna2 {
-    max-width: auto;
-}
-
-.columna2 h1 {
-    font-size: 25px;
-}
-
-.fila {
-    margin-top: 1px;
-    display: flex;
-}
-
-.fila img {
-    width: 40px;
-    height: 40px;
-}
-
-.fila label {
-    margin-top: 10px;
-    margin-left: 10px;
-    color: rgb(255, 255, 255);
-}
-
-
-/*Fin Redes Sociales*/
-
-
-/*Contactenos*/
-
-.columna3 {
-    max-width: auto;
-}
-
-.columna3 h1 {
-    font-size: 25px;
-}
-
-.fila1 {
-    margin-top: 20px;
-    display: flex;
-}
-
-.fila1 img {
-    width: 40px;
-    height: 40px;
-}
-
-.fila1 label {
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 150px;
-    color: rgb(255, 255, 255);
-}
-
-
-/*Fin contactenos*/
-
-
-/*FIN FOOTER*/
-
-
-/*Formulario*/
-
-.formulario {
-    width: 200px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-.formulario h1 {
-    text-align: center;
-    margin-top: 0;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.formulario .inputform .label .submit {
-    display: block;
-    width: 100%;
-    font-size: 1.3em;
-}
-
-.formulario .inputform {
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 40px;
-    background: transparent;
-}
-
-.formulario .inputform:focus {
-    outline: 1px solid rgba(0, 0, 0, 0.7);
-}
-
-.formulario .inputform:focus+.label {
-    margin-top: -130px;
-}
-
-.formulario .label {
-    padding-left: 15px;
-    position: absolute;
-    margin-top: -85px;
-    z-index: -20;
-    transition: all 0.3s;
-}
-
-.formulario .submit {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-}
-
-
-/*Formulario-JS*/
-
-.fijar {
-    margin-top: -130px;
-}
-
-
-/*Fin Formulario-JS*/
-
-
-/*Fin Formulario*/
+    
+    @media (min-width:768px) {
+        .nav {
+            --state-hamburguer: scale(0);
+            --state-menu: translate(0);
+        }
+        .nav:target {
+            --state-close: scale(0);
+        }
+        .nav__links {
+            padding: 0;
+            background-color: unset;
+            position: unset;
+            gap: 1.5em;
+            grid-auto-flow: column;
+            transform: unset;
+            grid-column: -2/-1;
+            grid-row: 1/2;
+        }
+        .nav__link {
+            font-size: 1rem;
+            letter-spacing: none;
+        }
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 35px;
+        margin-bottom: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+        padding: 25px 45px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 540px;
+        margin-right: 450px;
+        font-family: 'Poppins';
+    }
+    
+    .btn:hover {
+        background-color: rgb(255, 86, 210);
+    }
+    /*INICIO FOOTER*/
+    
+    footer {
+        width: 100%;
+        padding: 50px 0px;
+        background-color: rgb(255, 86, 210);
+        font-family: 'poppins';
+        background-size: cover;
+    }
+    
+    .container__footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 1px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .box__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .box__footer h2 {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-weight: 10;
+    }
+    
+    .box__footer p {
+        margin-bottom: 1px;
+        color: #ffffff;
+        font-weight: 10;
+        font-family: 'poppins';
+    }
+    
+    .box__footer img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    .box__footer a {
+        margin-top: 1px;
+        color: #ffffff;
+        font-weight: 60;
+        text-decoration: none;
+        margin-bottom: 15px;
+        padding-left: 1px;
+        padding-top: 1px;
+    }
+    
+    .derechos {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    
+    .derechos p {
+        margin-top: 25px;
+        color: #ffffff;
+    }
+    
+    .derechos hr {
+        border: none;
+        height: 2px;
+        background-color: #000000;
+    }
+    /*FIN FOOTER*/
+    /*Formulario*/
+    
+    .formulario {
+        width: 200px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        padding: 20px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+    
+    .formulario h1 {
+        text-align: center;
+        margin-top: 0;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .formulario .inputform .label .submit {
+        display: block;
+        width: 100%;
+        font-size: 1.3em;
+    }
+    
+    .formulario .inputform {
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 40px;
+        background: transparent;
+    }
+    
+    .formulario .inputform:focus {
+        outline: 1px solid rgba(0, 0, 0, 0.7);
+    }
+    
+    .formulario .inputform:focus+.label {
+        margin-top: -130px;
+    }
+    
+    .formulario .label {
+        padding-left: 15px;
+        position: absolute;
+        margin-top: -85px;
+        z-index: -20;
+        transition: all 0.3s;
+    }
+    
+    .formulario .submit {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+    }
+    /*Formulario-JS*/
+    
+    .fijar {
+        margin-top: -130px;
+    }
+    /*Fin Formulario-JS*/
+    /*Fin Formulario*/

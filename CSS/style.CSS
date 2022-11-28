@@ -408,12 +408,14 @@ footer {
     text-align: center;
 }
 
-.infonos {}
-
 .infonos-titulo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.infonos-parrafo {
+    text-align: center;
 }
 
 

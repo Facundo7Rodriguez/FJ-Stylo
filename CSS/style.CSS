@@ -399,6 +399,15 @@ footer {
 
 /*CSS de area:ACERCA DE*/
 
+.acercafoto {
+    width: 600px;
+    height: 400px;
+}
+
+.infofoto {
+    text-align: center;
+}
+
 
 /*FIN CSS de area:ACERCA DE*/
 
